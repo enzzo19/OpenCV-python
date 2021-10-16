@@ -11,6 +11,7 @@ cv.waitKey(0)
 # Reading Videos
 capture = cv.VideoCapture("Videos/Spider-Man-3.mp4")  # Reference WEBCAM
 
+print("Chao !")
 while True:
     isTrue, frame = capture.read()
     cv.imshow('Video', frame)

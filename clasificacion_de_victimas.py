@@ -1,7 +1,8 @@
 import numpy as np
 import cv2 as cv
 
-img = cv.imread(r"C:/Users/ANA/Desktop/Webots - Erebus/rescate_laberinto/Alumnos/Alejandro_de_Ugarriza/TestVictimS.png")
+img = cv.imread(r"C:/Users/enzzo/OneDrive/Escritorio/TestVictimS.png")
+
 
 def classifyVictim(img):
     img = cv.resize(img, (100, 100))
@@ -49,11 +50,11 @@ def classifyVictim(img):
 
 #cv.imshow("gray", gray)
 #cv.imshow("thresh1", thresh1)
-cv.imshow("letter", letter)
-cv.imshow("lettercolor", letterColor)
-cv.imshow("top", images["top"])
-cv.imshow("middle", images["middle"])
-cv.imshow("bottom", images["bottom"])
+#cv.imshow("letter", letter)
+#cv.imshow("lettercolor", letterColor)
+#cv.imshow("top", images["top"])
+#cv.imshow("middle", images["middle"])
+#cv.imshow("bottom", images["bottom"])
 
-
+print(classifyVictim(img))
 cv.waitKey(10000)
